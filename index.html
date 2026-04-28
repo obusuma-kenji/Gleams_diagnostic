@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>新・YouTubeと動画の学校｜パートナーCMO® 監修 実践型プログラム</title>
+<meta name="description" content="凡庸な専門家・起業家で終わりたくないあなたへ。経営戦略と直結したYouTube・動画マーケティングの実践型プログラム。">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Shippori+Mincho:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════
+   DESIGN SYSTEM
+   ═══════════════════════════════════════════ */
+:root {
+  --bg-deep: #060a14;
+  --bg-section: #0b1120;
+  --bg-card: #111d35;
+  --bg-card-hover: #162544;
+  --accent-gold: #c9a44c;
+  --accent-gold-light: #e8c96a;
+  --accent-blue: #3b7cf5;
+  --accent-cyan: #06b6d4;
+  --accent-emerald: #10b981;
+  --accent-amber: #f59e0b;
+  --accent-rose: #f43f5e;
+  --accent-violet: #8b5cf6;
+  --text-primary: #eef2f7;
+  --text-secondary: #94a3b8;
+  --text-muted: #5a6a82;
+  --border: rgba(148, 163, 184, 0.08);
+  --border-gold: rgba(201, 164, 76, 0.2);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background: var(--bg-deep);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  line-height: 1.8;
+}
+
+.mincho { font-family: 'Shippori Mincho', serif; }
+
+img { max-width: 100%; display: block; }
+
+a { color: inherit; text-decoration: none; }
+
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-narrow {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ── Decorative line ── */
+.gold-line {
+  width: 48px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent-gold), var(--accent-gold-light));
+  margin: 0 auto 20px;
+}
+
+/* ── Section spacing ── */
+.lp-section {
+  padding: 80px 0;
+  position: relative;
+}
+
+.lp-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none;
+}
+
+.section-label {
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.section-heading {
+  text-align: center;
+  font-size: clamp(22px, 4.5vw, 30px);
+  font-weight: 800;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.section-sub {
+  text-align: center;
+  font-size: 14px;
+  color: var(--text-secondary);
+  max-width: 560px;
+  margin: 0 auto 48px;
+  line-height: 1.9;
+}
+
+/* ═══════════════════════════════════════════
+   HERO
+   ═══════════════════════════════════════════ */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 60px 20px;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 70% 50% at 30% 30%, rgba(201, 164, 76, 0.06) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 60% at 70% 70%, rgba(59, 124, 245, 0.04) 0%, transparent 70%);
+}
+
+/* Subtle grid pattern */
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(201, 164, 76, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201, 164, 76, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse 60% 60% at 50% 50%, black, transparent);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero-org {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: var(--accent-gold);
+  border: 1px solid var(--border-gold);
+  border-radius: 100px;
+  padding: 6px 22px;
+  margin-bottom: 28px;
+}
+
+.hero-catch {
+  font-size: clamp(14px, 3vw, 17px);
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.hero h1 {
+  font-size: clamp(28px, 6vw, 46px);
+  font-weight: 900;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+
+.hero h1 .gold {
+  background: linear-gradient(135deg, var(--accent-gold-light), var(--accent-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-subtitle {
+  font-size: clamp(13px, 2.5vw, 16px);
+  color: var(--text-secondary);
+  margin-bottom: 40px;
+  line-height: 1.9;
+}
+
+.hero-subtitle strong {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 40px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-light));
+  color: #0a0e1a;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 24px rgba(201, 164, 76, 0.25);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 36px rgba(201, 164, 76, 0.35);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 32px;
+  border: 1.5px solid var(--border-gold);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--accent-gold);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: rgba(201, 164, 76, 0.06);
+  border-color: var(--accent-gold);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.scroll-hint {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+  color: var(--text-muted);
+  letter-spacing: 0.15em;
+  animation: float 2s ease-in-out infinite;
+}
+
+.scroll-hint::after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 32px;
+  background: linear-gradient(to bottom, var(--text-muted), transparent);
+  margin: 8px auto 0;
+}
+
+/* ═══════════════════════════════════════════
+   PAIN POINTS
+   ═══════════════════════════════════════════ */
+.pain-section {
+  background: var(--bg-section);
+}
+
+.pain-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.pain-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 18px 22px;
+  background: rgba(244, 63, 94, 0.03);
+  border: 1px solid rgba(244, 63, 94, 0.08);
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.pain-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  background: rgba(244, 63, 94, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.pain-answer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 15px;
+  color: var(--text-primary);
+  font-weight: 600;
+  line-height: 2;
+}
+
+.pain-answer .em {
+  color: var(--accent-gold);
+}
+
+/* ═══════════════════════════════════════════
+   FEATURES
+   ═══════════════════════════════════════════ */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.feature-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px 24px;
+  transition: all 0.35s ease;
+}
+
+.feature-card:hover {
+  border-color: var(--border-gold);
+  transform: translateY(-2px);
+}
+
+.feature-num {
+  font-size: 32px;
+  font-weight: 900;
+  color: rgba(201, 164, 76, 0.15);
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.feature-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.feature-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.9;
+}
+
+/* ═══════════════════════════════════════════
+   TESTIMONIALS
+   ═══════════════════════════════════════════ */
+.testimonials-section {
+  background: var(--bg-section);
+}
+
+.testimonial-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px 26px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.testimonial-card::before {
+  content: '"';
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  font-size: 48px;
+  font-family: 'Shippori Mincho', serif;
+  color: rgba(201, 164, 76, 0.1);
+  line-height: 1;
+}
+
+.testimonial-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent-gold);
+  margin-bottom: 12px;
+}
+
+.testimonial-text {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 2;
+}
+
+/* ═══════════════════════════════════════════
+   INSTRUCTOR
+   ═══════════════════════════════════════════ */
+.instructor-box {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  background: var(--bg-card);
+  border: 1px solid var(--border-gold);
+  border-radius: 20px;
+  padding: 36px 32px;
+}
+
+.instructor-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(201, 164, 76, 0.15), rgba(59, 124, 245, 0.1));
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  color: var(--accent-gold);
+}
+
+.instructor-name {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.instructor-titles {
+  font-size: 12px;
+  color: var(--accent-gold);
+  margin-bottom: 14px;
+  line-height: 1.7;
+}
+
+.instructor-bio {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 2;
+}
+
+@media (max-width: 640px) {
+  .instructor-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 28px 20px;
+  }
+  .instructor-photo { width: 100px; height: 100px; font-size: 36px; }
+}
+
+/* ═══════════════════════════════════════════
+   PLANS
+   ═══════════════════════════════════════════ */
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.plan-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px 24px;
+  text-align: center;
+  transition: all 0.35s ease;
+  position: relative;
+}
+
+.plan-card.featured {
+  border-color: var(--accent-gold);
+  box-shadow: 0 0 40px rgba(201, 164, 76, 0.08);
+}
+
+.plan-badge {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-light));
+  color: #0a0e1a;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 16px;
+  border-radius: 100px;
+  letter-spacing: 0.1em;
+}
+
+.plan-name {
+  font-size: 17px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  margin-top: 4px;
+}
+
+.plan-features {
+  text-align: left;
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 2.2;
+  margin-bottom: 20px;
+}
+
+.plan-features .check {
+  color: var(--accent-emerald);
+  margin-right: 6px;
+}
+
+.plan-features .dash {
+  color: var(--text-muted);
+  margin-right: 6px;
+}
+
+/* ═══════════════════════════════════════════
+   DIAGNOSTIC TOOL (embedded)
+   ═══════════════════════════════════════════ */
+.diag-section {
+  background: linear-gradient(180deg, var(--bg-deep) 0%, var(--bg-section) 50%, var(--bg-deep) 100%);
+  padding: 80px 0 60px;
+}
+
+.diag-hero {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.diag-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(135deg, rgba(59, 124, 245, 0.1), rgba(6, 182, 212, 0.1));
+  border: 1px solid rgba(59, 124, 245, 0.2);
+  border-radius: 100px;
+  padding: 6px 18px;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--accent-cyan);
+  letter-spacing: 0.08em;
+  margin-bottom: 16px;
+}
+
+.diag-hero-badge::before { content: '▶'; font-size: 9px; }
+
+.diag-title {
+  font-size: clamp(22px, 5vw, 30px);
+  font-weight: 900;
+  background: linear-gradient(135deg, #eef2f7 30%, var(--accent-cyan) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+}
+
+.diag-sub {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+/* Progress */
+.progress-container {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(6, 10, 20, 0.94);
+  backdrop-filter: blur(16px);
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--border);
+  max-width: 700px;
+  margin: 0 auto 8px;
+  border-radius: 0 0 12px 12px;
+  transition: box-shadow 0.3s;
+}
+
+.progress-container.scrolled {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.progress-count { font-weight: 700; color: var(--accent-cyan); }
+
+.progress-bar-bg {
+  height: 3px;
+  background: rgba(148, 163, 184, 0.08);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--accent-blue), var(--accent-cyan));
+  border-radius: 3px;
+  transition: width 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Sections & Cards */
+.q-section { margin-top: 28px; }
+
+.q-section-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.q-section-num {
+  width: 32px; height: 32px;
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; font-weight: 900;
+  flex-shrink: 0;
+  color: #fff;
+}
+
+.q-section-title { font-size: 15px; font-weight: 700; }
+.q-section-sub { font-size: 10px; color: var(--text-muted); letter-spacing: 0.12em; text-transform: uppercase; }
+
+.q-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 8px;
+  transition: all 0.3s ease;
+}
+
+.q-card:hover { background: var(--bg-card-hover); }
+
+.q-card.ans-yes { border-color: rgba(16,185,129,0.45); background: rgba(16,185,129,0.05); box-shadow: 0 0 16px rgba(16,185,129,0.1); }
+.q-card.ans-no  { border-color: rgba(244,63,94,0.45);  background: rgba(244,63,94,0.05);  box-shadow: 0 0 16px rgba(244,63,94,0.1); }
+
+.q-text { font-size: 14px; line-height: 1.7; margin-bottom: 12px; }
+
+.q-btns { display: flex; gap: 10px; }
+
+.q-btn {
+  flex: 1;
+  padding: 9px 0;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-muted);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.q-btn.yes:hover { border-color: rgba(16,185,129,0.4); color: var(--accent-emerald); }
+.q-btn.no:hover  { border-color: rgba(244,63,94,0.4);  color: var(--accent-rose); }
+
+.q-btn.yes.sel { border-color: var(--accent-emerald); color: #fff; background: rgba(16,185,129,0.15); }
+.q-btn.no.sel  { border-color: var(--accent-rose);    color: #fff; background: rgba(244,63,94,0.15); }
+
+/* Submit */
+.diag-submit {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.btn-diag-submit {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 44px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+  color: #fff;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 24px rgba(59, 124, 245, 0.25);
+  transition: all 0.3s;
+}
+
+.btn-diag-submit:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(59,124,245,0.35); }
+.btn-diag-submit:disabled { opacity: 0.3; cursor: not-allowed; }
+
+.diag-hint { font-size: 12px; color: var(--text-muted); margin-top: 8px; }
+
+/* Results */
+#diagResults { display: none; }
+
+.res-hero {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, rgba(59,124,245,0.06), rgba(6,182,212,0.06));
+  border: 1px solid rgba(59,124,245,0.12);
+  border-radius: 20px;
+  margin-bottom: 24px;
+}
+
+.res-label { font-size: 11px; color: var(--text-muted); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 6px; }
+
+.res-score {
+  font-size: clamp(52px, 11vw, 72px);
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.res-score .denom { font-size: 0.35em; color: var(--text-muted); font-weight: 400; }
+
+.res-rank {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 12px;
+  padding: 5px 22px;
+  border-radius: 100px;
+  display: inline-block;
+}
+
+.rk-s { background: rgba(16,185,129,0.15); color: var(--accent-emerald); border: 1px solid rgba(16,185,129,0.25); }
+.rk-a { background: rgba(59,124,245,0.15); color: var(--accent-blue); border: 1px solid rgba(59,124,245,0.25); }
+.rk-b { background: rgba(245,158,11,0.15); color: var(--accent-amber); border: 1px solid rgba(245,158,11,0.25); }
+.rk-c { background: rgba(244,63,94,0.15); color: var(--accent-rose); border: 1px solid rgba(244,63,94,0.25); }
+
+.res-msg { margin-top: 14px; font-size: 14px; color: var(--text-secondary); line-height: 1.9; max-width: 500px; margin-left: auto; margin-right: auto; }
+
+.radar-wrap { display: flex; justify-content: center; margin: 24px 0; }
+.radar-wrap svg { max-width: 300px; width: 100%; }
+
+.cat-result {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px 22px;
+  margin-bottom: 12px;
+}
+
+.cat-hdr { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+.cat-ttl { font-size: 14px; font-weight: 700; }
+.cat-badge { font-size: 13px; font-weight: 900; padding: 3px 12px; border-radius: 100px; }
+.cat-bar-bg { height: 5px; background: rgba(148,163,184,0.08); border-radius: 5px; overflow: hidden; margin-bottom: 12px; }
+.cat-bar-fill { height: 100%; border-radius: 5px; transition: width 1s cubic-bezier(0.22,1,0.36,1); }
+.cat-fb { font-size: 13px; color: var(--text-secondary); line-height: 1.9; }
+
+.diag-cta {
+  margin-top: 32px;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(201,164,76,0.05), rgba(59,124,245,0.05));
+  border: 1px solid var(--border-gold);
+  border-radius: 20px;
+  padding: 36px 24px;
+}
+
+.diag-cta h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; line-height: 1.5; }
+.diag-cta p { font-size: 13px; color: var(--text-secondary); line-height: 1.9; margin-bottom: 20px; max-width: 480px; margin-left: auto; margin-right: auto; }
+
+.btn-diag-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 15px 36px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-light));
+  color: #0a0e1a;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 24px rgba(201,164,76,0.25);
+  transition: all 0.3s;
+}
+
+.btn-diag-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 36px rgba(201,164,76,0.35); }
+
+.btn-retry {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  padding: 9px 22px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-muted);
+  font-family: inherit;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.btn-retry:hover { border-color: var(--text-secondary); color: var(--text-secondary); }
+
+/* ═══════════════════════════════════════════
+   FINAL CTA
+   ═══════════════════════════════════════════ */
+.final-cta {
+  text-align: center;
+  padding: 80px 20px;
+  background: var(--bg-section);
+}
+
+.final-cta h2 {
+  font-size: clamp(20px, 4vw, 28px);
+  font-weight: 800;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.final-cta p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+  line-height: 1.9;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ═══════════════════════════════════════════
+   FOOTER
+   ═══════════════════════════════════════════ */
+.lp-footer {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 11px;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+}
+
+.lp-footer a { color: var(--accent-gold); }
+
+/* ═══════════════════════════════════════════
+   ANIMATIONS
+   ═══════════════════════════════════════════ */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(6px); }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
+</head>
+<body>
+
+<!-- ═════════════════ HERO ═════════════════ -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-org">一般社団法人パートナーCMO推進機構 監修</div>
+    <p class="hero-catch mincho">けっして「凡庸な専門家・起業家」で終わりたくない、あなたへ。</p>
+    <h1>
+      <span class="gold">新・YouTubeと動画の学校</span><br>
+      <span style="font-size:0.55em; font-weight:500; color:var(--text-secondary);">グリームスクラフ</span>
+    </h1>
+    <p class="hero-subtitle">
+      YouTubeを単なる集客ツールから<br>
+      <strong>「経営の志を映す投影機」</strong>へ。<br>
+      確実な行動と成果を生み出す実践型プログラム。
+    </p>
+    <div class="hero-buttons">
+      <a href="#diagnostic" class="btn-primary">無料で戦略診断する →</a>
+      <a href="https://www.pro-nv.jp/user/m/29a97d" target="_blank" class="btn-outline">無料個別相談を申込む</a>
+    </div>
+  </div>
+  <div class="scroll-hint">SCROLL</div>
+</section>
+
+<!-- ═════════════════ PAIN POINTS ═════════════════ -->
+<section class="lp-section pain-section">
+  <div class="container-narrow">
+    <div class="section-label">Problem</div>
+    <h2 class="section-heading">動画への自己投資の90％が<br>「信頼につながらない作業」で<br>終わっていませんか？</h2>
+    <div class="section-sub">多くの専門家・起業家がYouTubeに参入していますが、その多くが途中で挫折するか、期待した成果を得られずにいます。</div>
+
+    <div class="pain-grid fade-in">
+      <div class="pain-item">
+        <div class="pain-icon">✕</div>
+        <div>YouTubeをやろうと決めたのに、なかなか手につかない</div>
+      </div>
+      <div class="pain-item">
+        <div class="pain-icon">✕</div>
+        <div>始めてみたものの、撮影や編集の「作業」ばかりに追われている</div>
+      </div>
+      <div class="pain-item">
+        <div class="pain-icon">✕</div>
+        <div>再生回数は気になるが、問い合わせや売上につながっている実感がない</div>
+      </div>
+      <div class="pain-item">
+        <div class="pain-icon">✕</div>
+        <div>何を発信すればいいのか、ネタ切れで続かない</div>
+      </div>
+    </div>
+
+    <div class="pain-answer fade-in">
+      その根本原因はスキル不足ではありません。<br>
+      動画制作を「点」の作業として捉え、<br>
+      <span class="em">経営戦略と結びついていないこと</span>にあります。
+    </div>
+  </div>
+</section>
+
+<!-- ═════════════════ SOLUTION ═════════════════ -->
+<section class="lp-section">
+  <div class="container">
+    <div class="section-label">Solution</div>
+    <h2 class="section-heading">経営戦略と直結した<br>「成果コミットメント・サイクル」</h2>
+    <div class="section-sub">パートナーCMO®の視点から、YouTubeをあなたのビジネスの最強の資産へと変えるための実践環境です。</div>
+
+    <div class="features-grid">
+      <div class="feature-card fade-in">
+        <div class="feature-num">01</div>
+        <div class="feature-title">全7フェーズ体系化<br>「迷わない」カリキュラム</div>
+        <div class="feature-desc">基礎・戦略構築から分析・応用、新動向対応まで。断片的なノウハウのつまみ食いは不要です。最短ルートをステップ・バイ・ステップで歩みます。</div>
+      </div>
+      <div class="feature-card fade-in">
+        <div class="feature-num">02</div>
+        <div class="feature-title">会員専用<br>動画学習システム（LMS）</div>
+        <div class="feature-desc">直感的なダッシュボードと動画・テキスト一体型の学習画面。いつでもどこでも、進捗がひと目でわかる環境が「実践」を強力にサポートします。</div>
+      </div>
+      <div class="feature-card fade-in">
+        <div class="feature-num">03</div>
+        <div class="feature-title">会員限定<br>Facebookグループ</div>
+        <div class="feature-desc">事例動画の投稿、会員同士のフィードバック、相互支援が日常的に行われるコミュニティ。孤独な発信活動を仲間と共に乗り越えます。</div>
+      </div>
+      <div class="feature-card fade-in">
+        <div class="feature-num">04</div>
+        <div class="feature-title">パートナーCMO®による<br>「経営参画レベル」の伴走</div>
+        <div class="feature-desc">単なるスキル指導ではなく、経営者の右腕としての視点であなたの情報発信を根本からブラッシュアップ。次のステージへ確実な結果を出します。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════════════ TESTIMONIALS ═════════════════ -->
+<section class="lp-section testimonials-section">
+  <div class="container-narrow">
+    <div class="section-label">Voice</div>
+    <h2 class="section-heading">既存会員さまからのメッセージ</h2>
+    <div class="gold-line"></div>
+
+    <div class="testimonial-card fade-in">
+      <div class="testimonial-name">株式会社Confires　越阪部龍矢さん</div>
+      <div class="testimonial-text">チャンネル登録者数300人から5,000人に迫るまでに成長。財務コンサルタントとして見込み客や顧客との強固な信頼関係が構築でき、問い合わせ対応が大変な毎日です。</div>
+    </div>
+    <div class="testimonial-card fade-in">
+      <div class="testimonial-name">山口拓税理士事務所　山口拓さん</div>
+      <div class="testimonial-text">ゼロから1年足らずでチャンネル登録者600人超。経営者・同業者・金融機関に評価されるチャンネルに。問い合わせ・集客も日増しに増え、税理士としての「矜持」を示してくれる存在です。</div>
+    </div>
+    <div class="testimonial-card fade-in">
+      <div class="testimonial-name">Aile Coaching Salon　川瀬由里さん</div>
+      <div class="testimonial-text">動画企画を考えることで自己成長と事業ステージアップにつながっています。YouTube、Facebook、インスタグラムで欠かせない重要な発信ツールとなりました。</div>
+    </div>
+    <div class="testimonial-card fade-in">
+      <div class="testimonial-name">株式会社集中力　森健次朗さん</div>
+      <div class="testimonial-text">自分の提供価値をもっともよくご理解いただける発信ツールがYouTubeと動画でした。お互いの思考がどんどん深まっているのを感じています。</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════════════ INSTRUCTOR ═════════════════ -->
+<section class="lp-section">
+  <div class="container-narrow">
+    <div class="section-label">Instructor</div>
+    <h2 class="section-heading">運営責任者・講師</h2>
+    <div class="gold-line"></div>
+
+    <div class="instructor-box fade-in">
+      <div class="instructor-photo mincho">眞</div>
+      <div>
+        <div class="instructor-name">眞嶋 英郎</div>
+        <div class="instructor-titles">
+          グリームスネットワークLLC 代表・CEO<br>
+          一般社団法人パートナーCMO推進機構 代表理事
+        </div>
+        <div class="instructor-bio">
+          伊藤忠商事19年（自動車海外ビジネス）、ユニクロ グローバル広報・マーケティング統括責任者18年を経て現職。40業種70社超のYouTubeチャンネルで実証した独自メソッド「トリプル3 YouTube集客の仕組化」で、最短3ヶ月で集客30倍・売上3倍を実現。認定AI伴走士、法政大学非常勤講師ほか。
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════════════ PLANS ═════════════════ -->
+<section class="lp-section" style="background: var(--bg-section);">
+  <div class="container">
+    <div class="section-label">Plan</div>
+    <h2 class="section-heading">3つの実践プラン</h2>
+    <div class="section-sub">あなたの目標とフェーズに合わせてお選びいただけます。</div>
+
+    <div class="plans-grid">
+      <div class="plan-card fade-in">
+        <div class="plan-name">セルフラーニング</div>
+        <div class="plan-features">
+          <div><span class="check">✓</span>LMS 全カリキュラム利用</div>
+          <div><span class="dash">—</span>個別コンサルティング</div>
+          <div><span class="dash">—</span>グループコンサルティング</div>
+          <div><span class="dash">—</span>認定プロデューサー権利</div>
+        </div>
+        <div style="font-size:12px; color:var(--text-muted);">自走力のある方に最適</div>
+      </div>
+      <div class="plan-card featured fade-in">
+        <div class="plan-badge">RECOMMENDED</div>
+        <div class="plan-name">スタンダード</div>
+        <div class="plan-features">
+          <div><span class="check">✓</span>LMS 全カリキュラム利用</div>
+          <div><span class="check">✓</span>個別コンサル（月1回 1h）</div>
+          <div><span class="check">✓</span>グループコンサル（月1回 1h）</div>
+          <div><span class="check">✓</span>Facebookグループ</div>
+        </div>
+        <div style="font-size:12px; color:var(--accent-gold);">実践を加速する標準プラン</div>
+      </div>
+      <div class="plan-card fade-in">
+        <div class="plan-name">プレミアム</div>
+        <div class="plan-features">
+          <div><span class="check">✓</span>スタンダード全特典</div>
+          <div><span class="check">✓</span>認定プロデューサー権利</div>
+          <div><span class="check">✓</span>認定YouTubeプロモーター権利</div>
+          <div><span class="check">✓</span>新たな収益拡大の機会</div>
+        </div>
+        <div style="font-size:12px; color:var(--text-muted);">ビジネス拡大を目指す方へ</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════════════ DIAGNOSTIC ═════════════════ -->
+<section class="diag-section" id="diagnostic">
+  <div class="container-narrow">
+    <div class="diag-hero">
+      <div class="diag-hero-badge">無料セルフチェック</div>
+      <h2 class="diag-title">ファンダメンタル戦略診断</h2>
+      <p class="diag-sub">20問のYes / Noで、あなたのYouTube・動画活用の「戦略的な現在地」を可視化します。</p>
+    </div>
+
+    <div class="progress-container" id="progressBar">
+      <div class="progress-info">
+        <span>回答進捗</span>
+        <span class="progress-count"><span id="answeredCount">0</span> / 20</span>
+      </div>
+      <div class="progress-bar-bg">
+        <div class="progress-bar-fill" id="progressFill"></div>
+      </div>
+    </div>
+
+    <div id="questionsArea"></div>
+
+    <div class="diag-submit" id="submitArea">
+      <button class="btn-diag-submit" id="btnSubmit" disabled onclick="showResults()">診断結果を見る →</button>
+      <div class="diag-hint">すべての質問にお答えください</div>
+    </div>
+
+    <div id="diagResults"></div>
+  </div>
+</section>
+
+<!-- ═════════════════ FINAL CTA ═════════════════ -->
+<section class="final-cta">
+  <div class="container-narrow">
+    <div class="gold-line"></div>
+    <h2>凡庸な専門家・起業家で終わるか、<br>選ばれ続ける存在になるか。</h2>
+    <p>すべては「正しい実践環境」を選ぶことから始まります。<br>無料のオンライン個別診断・相談を随時お受けしております。</p>
+    <a href="https://www.pro-nv.jp/user/m/29a97d" target="_blank" class="btn-primary">無料個別相談に申込む →</a>
+  </div>
+</section>
+
+<!-- ═════════════════ FOOTER ═════════════════ -->
+<footer class="lp-footer">
+  <div>合同会社グリームスネットワーク　〒135-0062 東京都江東区東雲1-10-14 6F</div>
+  <div style="margin-top:6px;">
+    <a href="https://gleamsnetwork.com/" target="_blank">gleamsnetwork.com</a>　|　
+    <a href="https://gleamsnetwork.com/about-membership/?openExternalBrowser=1" target="_blank">特別会員制プログラム</a>　|　
+    <a href="https://gleamsnetwork.com/contact-page/" target="_blank">お問い合わせ</a>
+  </div>
+  <div style="margin-top:10px;">© Gleams Network LLC</div>
+</footer>
+
+<!-- ═════════════════ SCRIPTS ═════════════════ -->
+<script>
+/* ── Diagnostic Logic ── */
+const DATA = [
+  {
+    id:1, title:'現状', sub:'Current Situation', color:'#3b7cf5',
+    qs:['今、安定的な集客手段・ルートがあるか？','直近6ヶ月で問い合わせは増えているか？','紹介以外の流入導線があるか？','既存顧客との信頼関係を広げる仕組みがあるか？'],
+    fb:{
+      high:'集客の基盤がしっかりしています。この土台の上に動画を載せることで、さらなる飛躍が期待できます。',
+      mid:'一定の集客はできているものの、導線に偏りがあります。動画を「もう一つの柱」として構築することで安定感が増します。',
+      low:'集客の仕組みが属人的・紹介頼みになっている可能性があります。動画を使った「見つけてもらえる仕組み」の構築が急務です。'
+    }
+  },
+  {
+    id:2, title:'顧客理解', sub:'Customer Insight', color:'#8b5cf6',
+    qs:['理想顧客は明確か？','顧客の悩みを言語化できているか？','顧客があなたを選ぶ理由を説明できるか？','初対面の人にも価値が伝わる状態か？'],
+    fb:{
+      high:'顧客像が明確に描けています。この理解を動画コンテンツに反映すれば、強力なメッセージが発信できます。',
+      mid:'顧客理解の輪郭はありますが、言語化・可視化にまだ磨きの余地があります。動画企画を通じて解像度を上げましょう。',
+      low:'「誰に・何を届けるか」の設計が弱い状態です。動画制作の前に、まずターゲット設計と価値提案の言語化から取り組むのが効果的です。'
+    }
+  },
+  {
+    id:3, title:'専門性・信頼', sub:'Expertise & Trust', color:'#10b981',
+    qs:['専門性を継続的に発信しているか？','人柄や考え方が伝わる発信があるか？','実績・事例・顧客の声を見せているか？','「この人に相談したい」と思われる導線があるか？'],
+    fb:{
+      high:'信頼構築の基盤が整っています。動画でこの専門性と人柄を「体感」してもらうことで、問い合わせの質が飛躍的に上がります。',
+      mid:'発信はしているものの、「信頼→相談」の導線が十分ではありません。動画を通じて専門性と人間性の両面を見せる戦略が有効です。',
+      low:'専門性や人柄の発信が不足しています。YouTube動画は「この人に頼みたい」と思わせる最強のツール。まずここから着手しましょう。'
+    }
+  },
+  {
+    id:4, title:'動画活用', sub:'Video Utilization', color:'#f59e0b',
+    qs:['すでに動画を活用しているか？','動画の目的を明確に決めているか？','短期集客以外の役割を理解しているか？','継続できる制作・運用体制があるか？'],
+    fb:{
+      high:'動画活用の意識と体制が整っています。ここからは「戦略的な深化」のフェーズ。質と一貫性をさらに高めましょう。',
+      mid:'動画への取り組みはあるものの、戦略性や継続性に課題があります。体系的なカリキュラムに沿って進めることで効率が大幅に向上します。',
+      low:'動画活用がほぼ未着手、または手探りの状態です。正しい戦略と制作フローを学ぶことで、最短で成果につなげることができます。'
+    }
+  },
+  {
+    id:5, title:'行動 Readiness', sub:'Action Readiness', color:'#f43f5e',
+    qs:['半年後に今のままでよいと思うか？','信頼構築の仕組みを作る必要を感じているか？','YouTube・動画を中長期資産として捉えられるか？','今、一歩踏み出す意思があるか？'],
+    fb:{
+      high:'変化への意思と覚悟が十分にあります。あとは「正しい環境」に身を置くだけ。実践の一歩を踏み出しましょう。',
+      mid:'必要性は感じているものの、一歩を踏み出す後押しが必要な状態です。仲間と共に学ぶ環境が、行動の加速装置になります。',
+      low:'現状維持の意識がまだ強いようです。しかし市場は変化しています。まずは無料相談で、動画がもたらす可能性を知ることから始めてみてください。'
+    }
+  }
+];
+
+const REVERSE = [[5,0]];
+const answers = {};
+let totalQ = 0;
+
+function isRev(cid, qi) { return REVERSE.some(r => r[0]===cid && r[1]===qi); }
+
+function buildQ() {
+  const area = document.getElementById('questionsArea');
+  DATA.forEach(cat => {
+    const sec = document.createElement('div');
+    sec.className = 'q-section';
+    sec.innerHTML = `<div class="q-section-header"><div class="q-section-num" style="background:${cat.color}">${cat.id}</div><div><div class="q-section-title">${cat.title}</div><div class="q-section-sub">${cat.sub}</div></div></div>`;
+    cat.qs.forEach((q, qi) => {
+      totalQ++;
+      const k = `${cat.id}-${qi}`;
+      const c = document.createElement('div');
+      c.className = 'q-card';
+      c.id = `qc-${k}`;
+      c.innerHTML = `<div class="q-text">${q}</div><div class="q-btns"><button class="q-btn yes" onclick="ans('${k}',true,this)">Yes</button><button class="q-btn no" onclick="ans('${k}',false,this)">No</button></div>`;
+      sec.appendChild(c);
+    });
+    area.appendChild(sec);
+  });
+}
+
+function ans(k, v, btn) {
+  answers[k] = v;
+  const c = document.getElementById(`qc-${k}`);
+  c.classList.remove('ans-yes','ans-no');
+  c.classList.add(v ? 'ans-yes' : 'ans-no');
+  c.querySelectorAll('.q-btn').forEach(b => b.classList.remove('sel'));
+  btn.classList.add('sel');
+  updProg();
+}
+
+function updProg() {
+  const n = Object.keys(answers).length;
+  document.getElementById('answeredCount').textContent = n;
+  document.getElementById('progressFill').style.width = (n/totalQ*100)+'%';
+  document.getElementById('btnSubmit').disabled = n < totalQ;
+}
+
+function calcScores() {
+  const sc = {};
+  DATA.forEach(cat => {
+    let s = 0;
+    cat.qs.forEach((_, qi) => {
+      let v = answers[`${cat.id}-${qi}`];
+      if (isRev(cat.id, qi)) v = !v;
+      if (v) s++;
+    });
+    sc[cat.id] = s;
+  });
+  return sc;
+}
+
+function showResults() {
+  const sc = calcScores();
+  const total = Object.values(sc).reduce((a,b) => a+b, 0);
+  const pct = total / 20;
+
+  let rank, rc, msg;
+  if (pct >= 0.85) { rank='S ランク'; rc='rk-s'; msg='戦略基盤が非常に高いレベルで整っています。動画を「経営資産」として本格運用するフェーズです。パートナーCMO®との伴走で、さらなる飛躍を実現しましょう。'; }
+  else if (pct >= 0.65) { rank='A ランク'; rc='rk-a'; msg='基礎力は十分。いくつかの弱点を補強すれば、動画マーケティングで大きな成果が見込めます。体系的なプログラムで一気にレベルアップしましょう。'; }
+  else if (pct >= 0.4)  { rank='B ランク'; rc='rk-b'; msg='改善余地が多く、伸びしろが大きい状態です。正しい戦略と仕組みを構築すれば、半年後に劇的な変化が期待できます。'; }
+  else { rank='C ランク'; rc='rk-c'; msg='ほぼゼロからのスタートですが、それは「正しい方法で始められる」チャンスです。最短で成果を出すために、まずは無料個別相談をご活用ください。'; }
+
+  // Radar
+  const cx=150, cy=150, mR=110;
+  const ang = DATA.map((_,i) => (Math.PI*2*i/5) - Math.PI/2);
+  const p2xy = (a,r) => [cx+r*Math.cos(a), cy+r*Math.sin(a)];
+
+  let grid='';
+  [.25,.5,.75,1].forEach(p => { const pts=ang.map(a=>p2xy(a,mR*p).join(',')).join(' '); grid+=`<polygon points="${pts}" fill="none" stroke="rgba(148,163,184,0.08)" stroke-width="1"/>`; });
+  let axes=ang.map(a=>{const[x,y]=p2xy(a,mR);return`<line x1="${cx}" y1="${cy}" x2="${x}" y2="${y}" stroke="rgba(148,163,184,0.06)" stroke-width="1"/>`;}).join('');
+  const dPts=DATA.map((c,i)=>p2xy(ang[i],mR*(sc[c.id]/4)).join(',')).join(' ');
+  const dots=DATA.map((c,i)=>{const r=mR*(sc[c.id]/4);const[x,y]=p2xy(ang[i],r);return`<circle cx="${x}" cy="${y}" r="3.5" fill="${c.color}" stroke="#060a14" stroke-width="2"/>`;}).join('');
+  const lbls=DATA.map((c,i)=>{const[x,y]=p2xy(ang[i],mR+16);const anc=x<cx-10?'end':x>cx+10?'start':'middle';return`<text x="${x}" y="${y}" fill="${c.color}" font-size="10" font-weight="700" text-anchor="${anc}" dominant-baseline="central">${c.title}</text><text x="${x}" y="${y+13}" fill="#5a6a82" font-size="9" text-anchor="${anc}" dominant-baseline="central">${sc[c.id]}/4</text>`;}).join('');
+
+  const radar=`<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">${grid}${axes}<polygon points="${dPts}" fill="rgba(59,124,245,0.1)" stroke="url(#rG)" stroke-width="2"/><defs><linearGradient id="rG" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#3b7cf5"/><stop offset="100%" stop-color="#06b6d4"/></linearGradient></defs>${dots}${lbls}</svg>`;
+
+  const catCards = DATA.map(c => {
+    const s=sc[c.id], p2=s/4*100;
+    const fb = s>=3?c.fb.high:s>=2?c.fb.mid:c.fb.low;
+    const bc = s>=3?'rgba(16,185,129,0.12);color:#10b981':s>=2?'rgba(245,158,11,0.12);color:#f59e0b':'rgba(244,63,94,0.12);color:#f43f5e';
+    return `<div class="cat-result"><div class="cat-hdr"><div class="cat-ttl" style="color:${c.color}">${c.id}. ${c.title}</div><div class="cat-badge" style="background:${bc}">${s}/4</div></div><div class="cat-bar-bg"><div class="cat-bar-fill" style="width:${p2}%;background:${c.color}"></div></div><div class="cat-fb">${fb}</div></div>`;
+  }).join('');
+
+  const sCol = pct>=0.85?'#10b981':pct>=0.65?'#3b7cf5':pct>=0.4?'#f59e0b':'#f43f5e';
+
+  document.getElementById('diagResults').innerHTML = `
+    <div class="res-hero"><div class="res-label">Total Score</div><div class="res-score" style="color:${sCol}">${total}<span class="denom"> / 20</span></div><div class="res-rank ${rc}">${rank}</div><div class="res-msg">${msg}</div></div>
+    <div class="radar-wrap">${radar}</div>
+    ${catCards}
+    <div class="diag-cta"><h3>次のステップへ進みませんか？</h3><p>「新・YouTubeと動画の学校」では、パートナーCMO®の視点から、あなたのビジネスを次の次元へ引き上げる実践型プログラムをご用意しています。</p><a href="https://www.pro-nv.jp/user/m/29a97d" target="_blank" class="btn-diag-cta">無料個別相談を申込む →</a><br><button class="btn-retry" onclick="retryDiag()">↻ もう一度診断する</button></div>
+  `;
+
+  document.getElementById('diagResults').style.display = 'block';
+  document.getElementById('submitArea').style.display = 'none';
+  document.getElementById('questionsArea').style.display = 'none';
+  document.getElementById('diagResults').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function retryDiag() {
+  Object.keys(answers).forEach(k => delete answers[k]);
+  document.getElementById('diagResults').style.display = 'none';
+  document.getElementById('submitArea').style.display = '';
+  document.getElementById('questionsArea').style.display = '';
+  document.querySelectorAll('.q-card').forEach(c => { c.classList.remove('ans-yes','ans-no'); c.querySelectorAll('.q-btn').forEach(b=>b.classList.remove('sel')); });
+  updProg();
+  document.getElementById('diagnostic').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+/* ── Scroll animations ── */
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+/* ── Progress bar shadow ── */
+window.addEventListener('scroll', () => {
+  const pb = document.getElementById('progressBar');
+  if (pb) { pb.classList.toggle('scrolled', window.scrollY > 400); }
+});
+
+/* ── Init ── */
+buildQ();
+</script>
+</body>
+</html>
